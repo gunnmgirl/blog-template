@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.flex-box-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  color: #f2f2f2;
+  background-image: url(blonde.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .flex-box-intro {
+    padding: 20px 160px;
+    background-attachment: initial;
+  }
+}
+
+.flex-intro-item {
+  margin: 8px 0;
+  align-self: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 54px;
+  font-family: "Playfair Display", serif;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ff4dd2;
+  font-weight: 500;
+}
+
+.intro-link {
+  text-decoration: none;
+  color: #00bfff;
+}
+
+.flex-box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+}
+
+@media (min-width: 992px) {
+  .flex-box-content {
+    overflow-y: auto;
+  }
+}
+
+.flex-content-item {
+  display: flex;
+
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.content-date {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.tag {
+  color: #ff4dd2;
+  font-weight: normal;
+}
+
+.content-title {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 6px;
+}
+
+.content {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 6px;
+}
+
+.content-read {
+  font-size: 12px;
+  color: #00bfff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
